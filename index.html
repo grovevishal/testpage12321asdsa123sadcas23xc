@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta name="description" content="[SPS Testing]">
+    <script src="https://amp.akamaized.net/hosted/1.1/player.esi?apikey=snap.trial.dev&version=9.1.22"></script>
+</head>
+
+<body>
+  <div class="sample">  
+    <div id="amp"></div>
+  </div>
+    <script>
+        var config = {
+            autoplay: true,
+            autoplayPolicy: "muted",
+            media: {
+                  title: "Multi language HLS Sample",
+                  source: [{
+                      src: "https://spstestmain.akamaized.net/hls/live/2098321/main/video.m3u8"
+                  }],
+              }
+          };
+
+        var amp = akamai.amp.AMP.create("amp", config);
+    </script>
+
+
+  <style type="text/css">
+        .sample {
+            border-style: none;
+            width: 640px;
+            height: 480px;  
+          background: white;
+                    }
+    </style>
+</body>
+
+</html>
