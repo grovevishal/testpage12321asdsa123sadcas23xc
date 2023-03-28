@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta name="description" content="[SPS Testing]">
-    <script src="https://amp.akamaized.net/hosted/1.1/player.esi?apikey=snap.trial.dev&version=9.1.22"></script>
+    <script src="https://amp.akamaized.net/hosted/1.1/player.esi?apikey=snap.trial.dev&version=9.1.19"></script>
 </head>
 
 <body>
@@ -15,8 +15,29 @@
             media: {
                   title: "Multi language HLS Sample",
                   source: [{
-                      src: "https://testsps2k23main.akamaized.net/hls/live/2099701/main/video-archive.m3u8?startTime=1679414800&endTime=1679414900"
+                      src: "https://testsps2k23main.akamaized.net/hls/live/2099701/main/video-archive.m3u8?startTime=1680015076&endTime=1680015316"
                   }],
+                  track : [{
+                  kind : "captions",
+                  type : "text/cea-608",
+                  srclang: "eng"
+                },
+               {
+                  kind : "captions",
+                  type : "text/cea-608",
+                  srclang: "spa"
+                },
+               {
+                  kind : "captions",
+                  type : "text/cea-608",
+                  srclang: "fra"
+                },
+                {
+                  kind : "captions",
+                  type : "text/cea-608",
+                  srclang: "ita"
+                }],
+
               }
           };
 
